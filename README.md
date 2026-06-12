@@ -28,7 +28,7 @@ Just open `index.html` in a browser. No dependencies, no build.
 ├── assets/
 │   ├── css/styles.css    # styles (wedding palette + lego accent)
 │   ├── js/script.js      # form logic, image loading, animations
-│   └── images/           # drop real photos here (see images/README.md)
+│   └── landing/          # real event photos (boaz-*.jpg) — see landing/README.md
 ```
 
 ## Configure it (1 minute)
@@ -46,9 +46,10 @@ const CONFIG = {
   (great for starting out, no backend needed).
 - Add a free [Formspree](https://formspree.io) endpoint to collect leads by email.
 
-## Add your photos
-See [`assets/images/README.md`](assets/images/README.md). Name them `gallery-1.jpg`
-… `gallery-5.jpg` and drop them in — the page picks them up automatically.
+## Photos
+The real event photos live in [`assets/landing/`](assets/landing/README.md)
+(`boaz-*.jpg`). To swap which ones appear, edit the `data-src` attributes in
+`index.html` — see the table in that folder's README.
 
 ## Deploy (free options)
 - **GitHub Pages** — Settings → Pages → deploy from this branch → root.
