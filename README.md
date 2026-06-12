@@ -1,1 +1,58 @@
-# Builttobloom
+# Built to Bloom 🌸
+
+> פרחים שנבנו כדי לפרוח — לתמיד.
+
+Landing page for **Built to Bloom** — a service that rents LEGO® flower bouquets
+and custom brick displays for weddings and events. The page is in Hebrew (RTL)
+and built as a single static site, so it deploys anywhere with zero build step.
+
+## Why this page exists
+This is a demand-validation page: drive traffic from an Instagram post, and see
+how many real couples leave their details ("כן וואי / לא וואי"). The lead form
+either emails you (via Formspree) or opens a pre-filled WhatsApp message.
+
+## The pitch (key selling points)
+- 🌗 **Never wilts** — perfect from morning to the end of the night, and a keepsake forever.
+- ☀️ **Weatherproof** — sun, rain, wind or A/C: doesn't matter.
+- 💸 **Cheaper than real flowers** — and it isn't thrown away after the event.
+- 🎨 **Fully customizable** — colors, sizes, characters, themed pieces.
+- 🌱 **Eco-friendly** — reused again and again, zero waste.
+- 🛠️ **Doesn't break, just clicks apart** — spare parts always on hand.
+
+## Quick start
+Just open `index.html` in a browser. No dependencies, no build.
+
+```
+.
+├── index.html            # the page
+├── assets/
+│   ├── css/styles.css    # styles (wedding palette + lego accent)
+│   ├── js/script.js      # form logic, image loading, animations
+│   └── images/           # drop real photos here (see images/README.md)
+```
+
+## Configure it (1 minute)
+Open `assets/js/script.js` and edit the `CONFIG` block at the top:
+
+```js
+const CONFIG = {
+  whatsapp: "972500000000",   // your WhatsApp number, international format, digits only
+  instagram: "built.to.bloom", // your Instagram handle, no @
+  formEndpoint: "",            // optional Formspree URL to collect leads by email
+};
+```
+
+- Leave `formEndpoint` empty and the form opens a pre-filled WhatsApp message
+  (great for starting out, no backend needed).
+- Add a free [Formspree](https://formspree.io) endpoint to collect leads by email.
+
+## Add your photos
+See [`assets/images/README.md`](assets/images/README.md). Name them `gallery-1.jpg`
+… `gallery-5.jpg` and drop them in — the page picks them up automatically.
+
+## Deploy (free options)
+- **GitHub Pages** — Settings → Pages → deploy from this branch → root.
+- **Netlify / Vercel / Cloudflare Pages** — drag-and-drop the folder, or connect the repo.
+
+---
+LEGO® is a trademark of the LEGO Group, which does not sponsor or endorse this project.
