@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Built to Bloom — אופציה 7: Brick Box</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Assistant:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ffffff;--ink:#1d2433;--red:#e3000b;--yellow:#ffd500;--blue:#0057b8;--green:#00a651;--line:#e7eaf0}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Assistant",sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+h1,h2,h3,.f{font-family:"Fredoka",sans-serif}
+.wrap{max-width:1140px;margin:auto;padding:0 22px}
+/* lego stud helper */
+.studs{position:relative}
+.studs::before{content:"";position:absolute;top:-9px;left:14px;right:14px;height:9px;background-image:radial-gradient(circle at 9px 4px,currentColor 5px,transparent 5px);background-size:30px 9px;opacity:.9}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.logo{display:flex;align-items:center;gap:10px;font-family:"Fredoka";font-weight:700;font-size:1.45rem}
+.logo .m{width:36px;height:30px;background:var(--red);border-radius:5px;position:relative;box-shadow:inset 0 -4px 0 rgba(0,0,0,.18)}
+.logo .m::before{content:"";position:absolute;top:-5px;left:6px;width:8px;height:8px;border-radius:50%;background:var(--red);box-shadow:16px 0 0 var(--red)}
+.btn{font-family:"Fredoka";font-weight:600;cursor:pointer;border:0;color:#fff;padding:13px 26px;border-radius:9px;position:relative;box-shadow:inset 0 -5px 0 rgba(0,0,0,.22);transition:.12s;display:inline-block}
+.btn:active{transform:translateY(2px);box-shadow:inset 0 -3px 0 rgba(0,0,0,.22)}
+.btn.red{background:var(--red)}.btn.blue{background:var(--blue)}.btn.green{background:var(--green)}
+.btn.yellow{background:var(--yellow);color:var(--ink);box-shadow:inset 0 -5px 0 rgba(0,0,0,.14)}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center;padding:24px 0 50px}
+.kicker{display:inline-flex;align-items:center;gap:8px;background:var(--yellow);color:var(--ink);font-family:"Fredoka";font-weight:600;padding:7px 16px;border-radius:8px;box-shadow:inset 0 -4px 0 rgba(0,0,0,.12)}
+.hero h1{font-size:clamp(2.6rem,5.6vw,4.2rem);line-height:1.04;margin:18px 0}
+.hero h1 .r{color:var(--red)}.hero h1 .b{color:var(--blue)}.hero h1 .g{color:var(--green)}
+.hero p{font-size:1.18rem;color:#4b5468;max-width:34ch;margin:0 0 26px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero-media{position:relative}
+.brickframe{background:var(--blue);padding:14px;border-radius:16px;box-shadow:inset 0 -8px 0 rgba(0,0,0,.2)}
+.brickframe::before{content:"";position:absolute;top:5px;left:34px;width:14px;height:14px;border-radius:50%;background:var(--blue);box-shadow:30px 0 0 var(--blue),60px 0 0 var(--blue),90px 0 0 var(--blue)}
+.brickframe img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:8px;display:block}
+.feat{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:18px 0 60px}
+.brick{border-radius:12px;padding:22px 18px;color:#fff;box-shadow:inset 0 -7px 0 rgba(0,0,0,.2)}
+.brick .e{font-size:1.9rem}.brick b{font-family:"Fredoka";font-weight:600;font-size:1.1rem;display:block;margin-top:8px}
+.brick small{opacity:.95;font-size:.92rem}
+.feat .red{background:var(--red)}.feat .blue{background:var(--blue)}.feat .green{background:var(--green)}.feat .yellow{background:var(--yellow);color:var(--ink)}.feat .yellow small{color:#5a4a00}
+.sec-title{text-align:center;font-size:clamp(2rem,4vw,2.9rem);margin-bottom:8px}
+.sec-title .r{color:var(--red)}.sec-title .b{color:var(--blue)}
+.sub{text-align:center;color:#6b7385;margin-bottom:28px}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:60px}
+.gal .g{border:4px solid var(--yellow);border-radius:12px;overflow:hidden;box-shadow:inset 0 -6px 0 rgba(0,0,0,.06)}
+.gal img{width:100%;height:210px;object-fit:cover;display:block}
+.contact{border:4px solid var(--line);border-radius:20px;padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-bottom:56px;background:#fbfcfe}
+.contact h2{font-size:2.1rem}.contact h2 .r{color:var(--red)}
+.contact .lead{color:#4b5468;margin:12px 0 16px}
+.contact .pk{font-weight:600;margin:6px 0;color:#2a3142}
+form{display:grid;gap:14px}
+label{font-family:"Fredoka";font-weight:600;font-size:.92rem}
+input,textarea{font-family:"Assistant";font-size:1rem;padding:13px 15px;border:2.5px solid var(--line);border-radius:10px;background:#fff;width:100%}
+input:focus,textarea:focus{outline:none;border-color:var(--blue)}
+footer{text-align:center;padding:22px 0 50px;font-family:"Fredoka";color:#6b7385}
+@media(max-width:860px){.hero,.contact{grid-template-columns:1fr}.feat{grid-template-columns:1fr 1fr}.gal{grid-template-columns:1fr 1fr}}
+</style></head>
+<body><div class="wrap">
+<nav><div class="logo"><span class="m"></span> Built to Bloom</div><a class="btn red" href="#c">קבלו פרטים</a></nav>
+<section class="hero">
+  <div>
+    <span class="kicker">🧱 זרי לגו להשכרה לאירועים</span>
+    <h1>פרחים שנבנו <span class="r">ל</span><span class="b">פ</span><span class="g">רוח</span> — לתמיד</h1>
+    <p>זרים ועיצובים מלבני לגו, אבן על אבן, בהתאמה אישית מלאה. לא נובלים. לא מתקלקלים. נשארים איתכם לנצח.</p>
+    <div class="cta"><a class="btn red" href="#c">קבלו פרטים »</a><a class="btn yellow" href="#g">לגלריה</a></div>
+  </div>
+  <div class="hero-media"><div class="brickframe"><img src="../assets/landing/boaz-45.jpg" alt=""></div></div>
+</section>
+<div class="feat">
+  <div class="brick red"><div class="e">🌗</div><b>לא נובל</b><small>נראה מושלם כל הערב</small></div>
+  <div class="brick blue"><div class="e">☀️</div><b>חסין מזג אוויר</b><small>שמש, גשם או רוח</small></div>
+  <div class="brick green"><div class="e">🌱</div><b>אקולוגי</b><small>שימוש חוזר, אפס בזבוז</small></div>
+  <div class="brick yellow"><div class="e">🎨</div><b>בהתאמה אישית</b><small>צבעים ודגמים שלכם</small></div>
+</div>
+<h2 class="sec-title" id="g">ה<span class="r">ג</span><span class="b">לריה</span></h2>
+<p class="sub">כל זר נבנה ביד — ונשאר לתמיד</p>
+<div class="gal">
+  <div class="g"><img src="../assets/landing/boaz-402.jpg"></div>
+  <div class="g"><img src="../assets/landing/boaz-46.jpg"></div>
+  <div class="g"><img src="../assets/landing/boaz-353.jpg"></div>
+  <div class="g"><img src="../assets/landing/boaz-891.jpg"></div>
+</div>
+<section class="contact" id="c">
+  <div><h2>בואו נ<span class="r">בנה</span> ביחד 🧱</h2><p class="lead">השאירו פרטים ונחזור עם הצעת מחיר ורעיונות. אירועים עד 4 חודשים קדימה.</p>
+  <p class="pk">✓ ייעוץ ועיצוב חינם</p><p class="pk">✓ שינוע + התקנה כלולים</p><p class="pk">✓ זמין בכל עונה</p></div>
+  <form><div><label>שם מלא</label><input placeholder="איך לפנות אליכם?"></div><div><label>טלפון</label><input placeholder="05X-XXXXXXX"></div><div><label>טקסט חופשי</label><textarea rows="3" placeholder="תאריך, סגנון, צבעים..."></textarea></div><button class="btn blue" type="button">שלחו ונחזור אליכם</button></form>
+</section>
+<footer>🧱 Built to Bloom · פרחים שנבנו כדי לפרוח — לתמיד</footer>
+</div></body></html>
