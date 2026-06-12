@@ -23,8 +23,16 @@ const igUrl = `https://instagram.com/${CONFIG.instagram}`;
   const el = document.getElementById(id);
   if (el) { el.href = waUrl; el.target = "_blank"; el.rel = "noopener"; }
 });
-const ig = document.getElementById("ig-link");
-if (ig) { ig.href = igUrl; ig.target = "_blank"; ig.rel = "noopener"; }
+["ig-link", "ig-inline"].forEach((id) => {
+  const el = document.getElementById(id);
+  if (el) { el.href = igUrl; el.target = "_blank"; el.rel = "noopener"; }
+});
+
+// Close the mobile menu after tapping a link
+const navCheck = document.getElementById("nav-check");
+document.querySelectorAll(".nav__links a").forEach((a) =>
+  a.addEventListener("click", () => { if (navCheck) navCheck.checked = false; })
+);
 
 // Current year in footer
 const yearEl = document.getElementById("year");
@@ -45,7 +53,7 @@ document.querySelectorAll("img[data-src]").forEach((img) => {
 
 /* ---- Reveal on scroll ---- */
 const revealTargets = document.querySelectorAll(
-  ".card, .step, .gallery__item, .pricing__highlight, .lead, .section__title"
+  ".benefit, .product, .step, .gallery__item, .pricing__highlight, .lead, .section__title"
 );
 revealTargets.forEach((el) => el.classList.add("reveal"));
 if ("IntersectionObserver" in window) {
