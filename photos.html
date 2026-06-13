@@ -41,11 +41,26 @@
   <div class="grid" id="grid"></div>
   <footer>Built to Bloom · <a href="./">חזרה לאתר</a></footer>
   <script>
-    const files = ["boaz-45","boaz-46","boaz-301","boaz-328","boaz-331","boaz-332","boaz-333","boaz-334","boaz-344","boaz-345","boaz-346","boaz-352","boaz-353","boaz-354","boaz-377","boaz-378","boaz-383","boaz-394","boaz-402","boaz-403","boaz-406","boaz-407","boaz-408","boaz-524","boaz-891"];
+    const files = [
+      // newest real product photos
+      "467a3712ace7e6a615309860987652fc.jpg","4660e0e40f0db4f75078699be47fbcbf.jpg",
+      "33724edd8841df81e0aba94bb7ae583f.jpg","7c8eebdb64e320752d3e696cd378cd20.jpg",
+      "52a3b33afc88a8ee9cc6be08afb7c89b.webp","392152d60824e96096d7ba1c9a75a73d.jpg",
+      "adc1581a7c60d6dff564f845988d4b09.jpg","da313339ddcdd1f540e5d17061016fa3.webp",
+      "00a19a542e733ccfa0ece62912dd4415.jpg","0021172ac691cf7285730804c095cd9e.webp",
+      "14cefc3019af2903039209e13113581b.webp","3b4e433275e4e4b51415df4cd7f0df6a.webp",
+      "a20d8b06612784cdf71e226274ca6ce8.jpg","6f3949cafac816bb809b41b4c33ff2c7.webp",
+      "0f4e45cc2283fdcb64528b2a337dc108.webp","002fb080481be7f5e581088857f31a72.webp",
+      // original event photos
+      "boaz-45.jpg","boaz-46.jpg","boaz-301.jpg","boaz-328.jpg","boaz-331.jpg","boaz-332.jpg",
+      "boaz-333.jpg","boaz-334.jpg","boaz-344.jpg","boaz-345.jpg","boaz-346.jpg","boaz-352.jpg",
+      "boaz-353.jpg","boaz-354.jpg","boaz-377.jpg","boaz-378.jpg","boaz-383.jpg","boaz-394.jpg",
+      "boaz-402.jpg","boaz-403.jpg","boaz-406.jpg","boaz-407.jpg","boaz-408.jpg","boaz-524.jpg","boaz-891.jpg"
+    ];
     const grid = document.getElementById("grid");
     files.forEach((f) => {
       const fig = document.createElement("figure");
-      fig.innerHTML = '<img src="assets/landing/' + f + '.jpg" alt="' + f + '" loading="lazy"><figcaption>' + f + '</figcaption>';
+      fig.innerHTML = '<img src="assets/landing/' + f + '" alt="' + f + '" loading="lazy"><figcaption>' + f + '</figcaption>';
       grid.appendChild(fig);
     });
   </script>
