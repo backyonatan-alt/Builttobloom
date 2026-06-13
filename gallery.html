@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Built to Bloom · הגלריה המלאה</title>
+  <meta name="description" content="הגלריה המלאה של Built to Bloom — זרי כלה, פרחי דש, פסלי חתן וכלה, מרכזי שולחן ועיצובי לגו בהתאמה אישית." />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700;800&family=Assistant:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧱</text></svg>" />
+</head>
+<body>
+
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a href="index.html" class="brand">
+        <span class="brand__mark" aria-hidden="true">
+          <span class="stud"></span><span class="stud"></span>
+          <span class="stud"></span><span class="stud"></span>
+        </span>
+        <span class="brand__text">Built&nbsp;to&nbsp;Bloom</span>
+      </a>
+      <nav class="nav__links">
+        <a href="index.html#why">למה לגו</a>
+        <a href="index.html#products">מה אפשר להזמין</a>
+        <a href="index.html" class="btn btn--dark nav__cta">חזרה לאתר</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section__title">ה<em>גלריה</em> המלאה</h2>
+      <p class="section__sub">כל העיצובים שלנו — זרי כלה, פרחי דש, פסלי חתן וכלה, מרכזי שולחן ועוד.</p>
+      <div class="gallery" id="gallery" style="margin-top:34px"></div>
+      <div class="gallery__more">
+        <a href="index.html#contact" class="btn btn--primary">בדקו זמינות לאירוע »</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container" style="padding-bottom:40px"><div class="strip"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__tagline">Built to Bloom · השכרת זרי לגו לחתונות — יופי שנשאר לתמיד</p>
+      <nav class="footer__social">
+        <a id="ig-link" href="#" aria-label="אינסטגרם">Instagram</a>
+        <a id="wa-link-footer" href="#" aria-label="וואטסאפ">WhatsApp</a>
+      </nav>
+    </div>
+  </footer>
+
+  <a class="wa-fab" id="wa-fab" href="#" aria-label="צרו קשר בוואטסאפ">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M.06 24l1.68-6.13A11.86 11.86 0 0 1 .14 11.9C.13 5.34 5.47 0 12.03 0a11.82 11.82 0 0 1 8.41 3.49 11.82 11.82 0 0 1 3.48 8.42c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 0 1-5.69-1.45L.06 24zM6.6 20.13c1.67.99 3.27 1.59 5.42 1.59 5.45 0 9.89-4.43 9.9-9.88a9.87 9.87 0 0 0-9.88-9.9c-5.46 0-9.9 4.43-9.9 9.88 0 2.26.66 3.95 1.77 5.72l-.99 3.62 3.68-1.03zM17.4 14.3c-.07-.12-.27-.2-.56-.34-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.48 0 1.46 1.06 2.87 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.69.25-1.28.18-1.41z"/></svg>
+  </a>
+
+  <script>
+    const photos = [
+      ["467a3712ace7e6a615309860987652fc.jpg","כלה אוחזת זר לגו צבעוני"],
+      ["4660e0e40f0db4f75078699be47fbcbf.jpg","זר מפל לכלה"],
+      ["392152d60824e96096d7ba1c9a75a73d.jpg","זר ורדים קלאסי"],
+      ["7c8eebdb64e320752d3e696cd378cd20.jpg","פרחי דש על חליפת חתן"],
+      ["52a3b33afc88a8ee9cc6be08afb7c89b.webp","סט פרחי דש"],
+      ["33724edd8841df81e0aba94bb7ae583f.jpg","פסלי חתן וכלה"],
+      ["00a19a542e733ccfa0ece62912dd4415.jpg","שולחן אירוע מעוצב"],
+      ["da313339ddcdd1f540e5d17061016fa3.webp","מבחר זרים"],
+      ["adc1581a7c60d6dff564f845988d4b09.jpg","זרים בכד"],
+      ["14cefc3019af2903039209e13113581b.webp","קישוטי שולחן"],
+      ["0021172ac691cf7285730804c095cd9e.webp","מרכז שולחן עם לבנים"],
+      ["3b4e433275e4e4b51415df4cd7f0df6a.webp","מרכז שולחן גבוה"],
+      ["a20d8b06612784cdf71e226274ca6ce8.jpg","פינת לגו לאורחים"],
+      ["6f3949cafac816bb809b41b4c33ff2c7.webp","פינת אורחים · בונים את האהבה"],
+      ["boaz-45.jpg",""],["boaz-46.jpg",""],["boaz-301.jpg",""],["boaz-328.jpg",""],
+      ["boaz-331.jpg",""],["boaz-332.jpg",""],["boaz-333.jpg",""],["boaz-334.jpg",""],
+      ["boaz-344.jpg",""],["boaz-345.jpg",""],["boaz-346.jpg",""],["boaz-352.jpg",""],
+      ["boaz-353.jpg",""],["boaz-354.jpg",""],["boaz-377.jpg",""],["boaz-378.jpg",""],
+      ["boaz-383.jpg",""],["boaz-394.jpg",""],["boaz-402.jpg",""],["boaz-403.jpg",""],
+      ["boaz-406.jpg",""],["boaz-407.jpg",""],["boaz-408.jpg",""],["boaz-524.jpg",""],["boaz-891.jpg",""]
+    ];
+    const g = document.getElementById("gallery");
+    photos.forEach(([f, cap]) => {
+      const fig = document.createElement("figure");
+      fig.className = "gallery__item";
+      fig.innerHTML = '<img data-src="assets/landing/' + f + '" alt="' + (cap || "עיצוב לגו") + '" class="ph" loading="lazy">' + (cap ? '<figcaption>' + cap + '</figcaption>' : '');
+      g.appendChild(fig);
+    });
+  </script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
