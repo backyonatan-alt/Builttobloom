@@ -121,3 +121,49 @@ if (form) {
     form.reset();
   });
 }
+
+/* ---- Gallery lightbox (click to enlarge + prev/next) ---- */
+(function () {
+  const imgs = Array.from(document.querySelectorAll(".gallery__item img"));
+  if (!imgs.length) return;
+
+  const slides = imgs.map((im) => {
+    const fig = im.closest("figure");
+    const cap = fig && fig.querySelector("figcaption");
+    return { src: im.getAttribute("data-src") || im.src, cap: cap ? cap.textContent : "" };
+  });
+  let idx = 0;
+
+  const lb = document.createElement("div");
+  lb.className = "lb";
+  lb.innerHTML =
+    '<button class="lb__close" aria-label="סגור">✕</button>' +
+    '<button class="lb__btn lb__prev" aria-label="הקודם">‹</button>' +
+    '<img class="lb__img" alt="" />' +
+    '<button class="lb__btn lb__next" aria-label="הבא">›</button>' +
+    '<div class="lb__cap"></div>';
+  document.body.appendChild(lb);
+
+  const lbImg = lb.querySelector(".lb__img");
+  const lbCap = lb.querySelector(".lb__cap");
+
+  function show(i) {
+    idx = (i + slides.length) % slides.length;
+    lbImg.src = slides[idx].src;
+    lbCap.textContent = slides[idx].cap;
+  }
+  function open(i) { show(i); lb.classList.add("open"); document.body.style.overflow = "hidden"; }
+  function close() { lb.classList.remove("open"); document.body.style.overflow = ""; }
+
+  imgs.forEach((im, i) => im.addEventListener("click", () => open(i)));
+  lb.querySelector(".lb__close").addEventListener("click", close);
+  lb.querySelector(".lb__prev").addEventListener("click", (e) => { e.stopPropagation(); show(idx - 1); });
+  lb.querySelector(".lb__next").addEventListener("click", (e) => { e.stopPropagation(); show(idx + 1); });
+  lb.addEventListener("click", (e) => { if (e.target === lb) close(); });
+  document.addEventListener("keydown", (e) => {
+    if (!lb.classList.contains("open")) return;
+    if (e.key === "Escape") close();
+    else if (e.key === "ArrowLeft") show(idx - 1);
+    else if (e.key === "ArrowRight") show(idx + 1);
+  });
+})();
