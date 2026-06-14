@@ -206,7 +206,8 @@ img{max-width:100%;display:block}
 .reveal.in{opacity:1;transform:none}
 
 /* ---- Gallery lightbox ---- */
-.gallery__item{cursor:pointer}
+.gallery__item{cursor:zoom-in}
+.hero__img,.product img,.look img{cursor:zoom-in}
 .lb{position:fixed;inset:0;z-index:200;background:rgba(15,13,24,.93);display:none;align-items:center;justify-content:center}
 .lb.open{display:flex}
 .lb__img{max-width:90vw;max-height:82vh;border-radius:12px;object-fit:contain;box-shadow:0 20px 60px rgba(0,0,0,.5)}

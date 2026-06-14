@@ -124,13 +124,13 @@ if (form) {
 
 /* ---- Gallery lightbox (click to enlarge + prev/next) ---- */
 (function () {
-  const imgs = Array.from(document.querySelectorAll(".gallery__item img"));
+  const imgs = Array.from(document.querySelectorAll("img[data-src]"));
   if (!imgs.length) return;
 
   const slides = imgs.map((im) => {
     const fig = im.closest("figure");
     const cap = fig && fig.querySelector("figcaption");
-    return { src: im.getAttribute("data-src") || im.src, cap: cap ? cap.textContent : "" };
+    return { src: im.getAttribute("data-src") || im.src, cap: cap ? cap.textContent : (im.getAttribute("alt") || "") };
   });
   let idx = 0;
 
