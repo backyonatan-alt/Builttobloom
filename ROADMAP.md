@@ -1,63 +1,63 @@
-# 🧱🌷 Built to Bloom — מפת דרכים & Playbook
+# 🧱🌷 Built to Bloom — Roadmap & Playbook
 
-> מסמך חי שמרכז את הוויזן, הנכסים, מפת הדרכים, רעיונות השיווק והכלים.
-> עדכן אותו ככל שהעסק מתקדם.
+> A living document with the vision, assets, roadmap, marketing ideas, and tools.
+> Keep it updated as the business grows.
 
-**אתר חי:** https://backyonatan-alt.github.io/Builttobloom/
-**גלריה מלאה:** https://backyonatan-alt.github.io/Builttobloom/gallery.html
-**דף תמונות להורדה:** https://backyonatan-alt.github.io/Builttobloom/photos.html
-
----
-
-## 1. הוויזן והמיצוב
-פרחים שנבנו כדי לפרוח. **השכרת זרים וקישוטים עשויים מלגו לחתונות ואירועים מיוחדים.**
-נולדנו מתוך אהבה ללגו, לחתונות ולרגעים שמחים — רצינו להביא לאירוע **צבע, ייחודיות, ועיצוב שמספר סיפור, בלי לקרוע את הכיס.**
-
-**היתרונות (כל אחד מוזכר פעם אחת באתר):**
-- 💸 זול יותר מפרחים אמיתיים
-- ♻️ אקולוגי · שימוש חוזר
-- ✨ מקורי ובלתי נשכח
-- 🎨 בהתאמה אישית מלאה
-
-**טון כתיבה:** גוף ראשון, חם ואותנטי. בלי קלישאות שיווקיות ובלי לחזור על אותם מסרים.
+**Live site:** https://backyonatan-alt.github.io/Builttobloom/
+**Full gallery:** https://backyonatan-alt.github.io/Builttobloom/gallery.html
+**Photo download page:** https://backyonatan-alt.github.io/Builttobloom/photos.html
 
 ---
 
-## 2. מה כבר בנינו (הנכסים שלנו)
+## 1. Vision & Positioning
+Flowers built to bloom. **Renting LEGO-built bouquets and decorations for weddings and special events.**
+Born from a love of LEGO, weddings, and happy moments — we wanted to bring **color, originality, and a design that tells a story, without breaking the bank.**
 
-### האתר (זרימת העמוד)
-פתיח → **איך זה עובד + מה אפשר להזמין** → **בחרו לוק** → גלריה → **עלינו + למה לגו** → צרו קשר
+**Key benefits (each mentioned once on the site):**
+- 💸 Cheaper than real flowers
+- ♻️ Eco-friendly · reusable
+- ✨ Original and unforgettable
+- 🎨 Fully customizable
 
-### החבילה והמחיר
-- **חבילה אחת פשוטה: החל מ-₪600** — בוחרים פריטים מהמלאי **+ עמדה אחת**.
-- כולל **שינוע, התקנה ואיסוף**.
-
-### קטגוריות מוצר
-- **זרים** — זר כלה, משולב צבעוני, ורדים קלאסי
-- **עציצים** — ציפור גן עדן, ורדים בוואזה, מיני-עציצים
-- **פסלי חתן וכלה** — דמויות הזוג בהתאמה
-- **עמדות** — מתנות / ברכות עם תמונות הזוג / סידורי שולחן / קישוט לשולחן הרב בחופה
-
-### 3 לוקים מוכנים ("Rent This Look")
-- 🔴 **צבעוני** — פרחי בר בכל הצבעים
-- 🔵 **קלאסי** — ורדים רומנטיים
-- 🟢 **טבעי** — בוהו וגוונים חמים
+**Writing tone:** first person, warm, authentic. No marketing clichés, no repeating the same messages.
 
 ---
 
-## 3. ⭐ השלב הנוכחי — אימות ביקוש (Validation)
-המטרה: לעבור מ"יש לי אתר ומודל" ל"יש ביקוש מוכח" — לפני שמשקיעים בעוד לגו.
+## 2. What We've Built (Our Assets)
 
-**המדד היחיד שחשוב: פניות, לא לייקים.**
-יעד: 5-10 פניות רציניות תוך שבועיים = אות לביקוש. 1-2 שמוכנים לסגור = מאומת.
+### The website (page flow)
+Hero → **How it works + What you can order** → **Choose a look** → Gallery → **About + Why LEGO** → Contact
 
-### צעד מיידי: קבוצות חתונה בפייסבוק ⭐
-זה הערוץ הכי טוב להתחלה — חינם, וזוגות רלוונטיים נמצאים שם.
-1. הצטרף ל-5-10 קבוצות: "כלות [אזור]", "מתחתנים בזול", קבוצות אזוריות/קהילתיות.
-2. פרסם תמונה טובה + שאלה (תבנית מוכנה למטה).
-3. עקוב: תגובות, פניות פרטיות, שמירות.
+### Package & price
+- **One simple package: from ₪600** — pick items from the inventory **+ one station**.
+- Includes **delivery, setup, and pickup**.
 
-### תבנית פוסט מוכנה לקבוצות חתונה (העתק־הדבק)
+### Product categories
+- **Bouquets** — bridal, colorful mixed, classic roses
+- **Potted** — bird of paradise, roses in a vase, mini planters
+- **Bride & groom figurines** — custom couple figures
+- **Stations** — gifts / greetings with the couple's photos / table arrangements / head-table décor at the chuppah
+
+### 3 ready-made looks ("Rent This Look")
+- 🔴 **Colorful** — wildflowers in every color
+- 🔵 **Classic** — romantic roses
+- 🟢 **Natural** — boho and warm tones
+
+---
+
+## 3. ⭐ Current Stage — Demand Validation
+Goal: move from "I have a site and a model" to "demand is proven" — before investing in more LEGO.
+
+**The only metric that matters: inquiries, not likes.**
+Target: 5–10 serious inquiries within two weeks = a demand signal. 1–2 ready to book = validated.
+
+### Immediate move: Facebook wedding groups ⭐
+The best starting channel — free, and relevant couples are already there.
+1. Join 5–10 groups: "Brides [region]", "Getting married on a budget", local/community groups.
+2. Post a strong photo + a question (ready template below).
+3. Track: comments, DMs, saves.
+
+### Ready-to-post template for wedding groups (copy–paste, Hebrew)
 ```
 היי 🌷 אנחנו עסק חדש — Built to Bloom — ומשכירים זרים וקישוטי לגו לחתונות ואירועים.
 ✨ לא נובלים, בכל צבע שתבחרו, ומקוריים בטירוף — וזול יותר מפרחים אמיתיים.
@@ -65,121 +65,121 @@
 מתלבטים אם זה מתאים לכם? נשמח לשמוע מה דעתכם 👇
 (תמונות מצורפות + קישור בתגובה הראשונה)
 ```
-> טיפ: שים את קישור האתר בתגובה הראשונה, לא בפוסט עצמו (קבוצות חוסמות לינקים בגוף הפוסט).
+> Tip: put the website link in the **first comment**, not in the post body (many groups suppress posts with links).
 
-### עוד דרכים לאמת
-- **שיחות:** דבר עם 5-10 זוגות + 3 אולמות. שאל "הייתם שוכרים? כמה הייתם משלמים?".
-- **מבחן תשלום זעיר (~₪100):** מודעה ממוקדת ל"מתארסים [אזור]" → לאתר. ₪20-40 לליד = יש עסק.
+### Other ways to validate
+- **Conversations:** talk to 5–10 couples + 3 venues. Ask "Would you rent this? What would you pay?".
+- **Tiny paid test (~₪100):** a targeted ad to "engaged [region]" → to the site. ₪20–40 per lead = there's a business.
 
-### מה אומר שיש פוטנציאל אמיתי
-- אנשים שואלים **מחיר ותאריך** (לא רק "יפה!")
-- מישהו מוכן **לסגור/להפקיד**
-- אולם/מפיק מוכן להציג דוגמה
-➡️ אם זה קורה — תקנה לגו בביטחון.
-
----
-
-## 4. רעיונות שיווק (לשלבים הבאים)
-
-### א. "שחזרו את המראה" (Rent This Look) — ✅ כבר באתר
-מוכרים לוק שלם במקום פריט בודד. מעלה ערך הזמנה ומקל על הבחירה.
-
-### ב. שותפויות B2B (הכי חזק לעסק חדש)
-אולמות, מפיקי אירועים, צלמים, מעצבי אירועים — דוגמה אצלם + עמלת הפניה (10-15%).
-- הכן "ערכת שותף" (תמונות + מחירון + עמלה).
-- פנה ל-10 אולמות/מפיקים. השאר דוגמה בכניסה לאולם.
-
-### ג. עמדה ויראלית + מנוע תוכן (UGC)
-עמדת בנייה/ברכות = אטרקציה שאורחים מצלמים → תוכן חינמי.
-- שלט "תייגו אותנו @built.to.bloom".
-- מזכרת קטנה בתמורה לתיוג/ביקורת.
-- ריל אחד כל 2-3 ימים.
-
-### בונוס — נצחונות מהירים
-- **לפני/אחרי:** "פרחים אמיתיים אחרי יומיים 🥀 vs שלנו אחרי שנה ✨"
-- **מבצע השקה:** "10 הזוגות הראשונים — עמדה במתנה" (דחיפות + ביקורות ראשונות)
-- **Google Business Profile:** פרופיל עסק חינמי → מופיע בחיפושים מקומיים.
+### What "real potential" looks like
+- People ask about **price and date** (not just "pretty!")
+- Someone is willing to **book / leave a deposit**
+- A venue/planner agrees to display a sample
+➡️ If this happens — buy LEGO with confidence.
 
 ---
 
-## 5. תוכן לרשתות (Reels) — מוכן בתיקיית `social/`
-4 רילים מוכנים, כל אחד עם קובץ כתוביות (`.srt`) + תוכנית תמונות וכיתוב (`script.md`):
+## 4. Marketing Ideas (for later stages)
 
-| ריל | זווית | אורך | קובץ |
+### A. "Rent This Look" — ✅ already on the site
+Sell a complete look instead of a single item. Raises order value and makes choosing easier.
+
+### B. B2B partnerships (strongest for a new business)
+Venues, event producers, photographers, event designers — give them a sample + a referral fee (10–15%).
+- Build a "partner kit" (photos + price list + commission).
+- Reach out to 10 venues/producers. Leave a sample at the venue entrance.
+
+### C. Viral station + content engine (UGC)
+A build/greetings station = an attraction guests photograph → free content.
+- Sign: "Tag us @built.to.bloom".
+- A small keepsake in exchange for a tag/review.
+- One Reel every 2–3 days.
+
+### Bonus — quick wins
+- **Before/after:** "Real flowers after 2 days 🥀 vs ours after a year ✨"
+- **Launch offer:** "First 10 couples — a free station" (urgency + first reviews)
+- **Google Business Profile:** free profile → shows up in local searches.
+
+---
+
+## 5. Social Content (Reels) — ready in `social/`
+4 reels ready, each with a caption file (`.srt`) + a photo plan and copy (`script.md`):
+
+| Reel | Angle | Length | File |
 |---|---|---|---|
-| #1 | מבוא + מגוון | 15ש' / 18ש' | `social/reel-1/captions.srt` · `captions-18s.srt` |
-| #1 TikTok | אותו רעיון, ארוך | 25ש' | `social/reel-1/captions-tiktok-25s.srt` |
-| #2 | אמיתי מול לגו | 18ש' | `social/reel-2/captions.srt` |
-| #3 | התאמה אישית | 15ש' | `social/reel-3/captions.srt` |
+| #1 | Intro + variety | 15s / 18s | `social/reel-1/captions.srt` · `captions-18s.srt` |
+| #1 TikTok | Same idea, longer | 25s | `social/reel-1/captions-tiktok-25s.srt` |
+| #2 | Real vs. LEGO | 18s | `social/reel-2/captions.srt` |
+| #3 | Customization | 15s | `social/reel-3/captions.srt` |
 
-### תהליך עריכה ב-CapCut (דסקטופ)
-1. Create project → **Import** את התמונות → גרור לטיים-ליין לפי הסדר ב-`script.md`.
-2. **Ratio → 9:16** (אנכי).
-3. כל תמונה ~2.5-3 שניות.
-4. **Text → Local captions** → בחר את ה-`.srt`.
-5. קול: 🎤 הקלטה עצמית, או **Text to speech**. (דורש הרשאת מיקרופון ב-System Settings → Privacy → Microphone.)
-6. **Audio** → שיר רקע, להנמיך ל-~15-20% מתחת לקריינות.
-7. **Export → 1080p** → פרסם כ-Reel.
+### CapCut editing flow (desktop)
+1. Create project → **Import** photos → drag to timeline in the order in `script.md`.
+2. **Ratio → 9:16** (vertical).
+3. Each photo ~2.5–3 seconds.
+4. **Text → Local captions** → choose the `.srt`.
+5. Voice: 🎤 record yourself, or **Text to speech**. (Needs mic permission in System Settings → Privacy → Microphone.)
+6. **Audio** → background song, lower to ~15–20% under the voice.
+7. **Export → 1080p** → post as a Reel.
 
-### לוח פרסום מומלץ
-ריל אחד כל 2-3 ימים. עקביות > שלמות. התחל מ-#1.
+### Recommended posting cadence
+One reel every 2–3 days. Consistency > perfection. Start with #1.
 
 ---
 
-## 6. הכלים והנכסים הטכניים
+## 6. Tools & Technical Assets
 
-### מבנה ה-repo
+### Repo structure
 ```
-index.html              # עמוד הבית
-gallery.html            # גלריה מלאה
-photos.html             # דף תמונות להורדה
-assets/css/styles.css   # עיצוב
-assets/js/script.js     # טופס, וואטסאפ, טעינת תמונות
-assets/landing/         # כל התמונות (boaz-*.jpg + תמונות מוצר)
-social/reel-1..3/       # ערכות רילים
-.github/workflows/pages.yml  # פריסה אוטומטית ל-GitHub Pages
+index.html              # home page
+gallery.html            # full gallery
+photos.html             # photo download page
+assets/css/styles.css   # styling
+assets/js/script.js     # form, WhatsApp, image loading
+assets/landing/         # all photos (boaz-*.jpg + product photos)
+social/reel-1..3/       # reel kits
+.github/workflows/pages.yml  # auto-deploy to GitHub Pages
 ```
 
-### עדכון האתר
-כל `push` ל-branch `main` **מתפרסם אוטומטית** תוך ~1-2 דקות (GitHub Actions → Pages).
+### Updating the site
+Every `push` to the `main` branch **auto-deploys** within ~1–2 minutes (GitHub Actions → Pages).
 
-### הגדרות ליצירת קשר (`assets/js/script.js`)
+### Contact settings (`assets/js/script.js`)
 - WhatsApp: `972547822268` ✅
-- Instagram: `built.to.bloom` (לעדכן אם שונה)
-- `formEndpoint`: ריק → הטופס פותח וואטסאפ עם הפרטים. (אפשר לחבר Formspree לאיסוף לידים במייל.)
+- Instagram: `built.to.bloom` (update if different)
+- `formEndpoint`: empty → the form opens WhatsApp with the details. (Can connect Formspree to collect leads by email.)
 
-### הכלים שבהם השתמשנו
-- **בניית האתר + תוכן:** Claude (כאן).
-- **עריכת וידאו:** CapCut (אנחנו מספקים קובצי `.srt`).
-- **אחסון/פריסה:** GitHub + GitHub Pages (חינם).
-- אין כרגע MCP ליצירת וידאו/תמונות/קול. לקול איכותי בעברית אפשר לשקול ElevenLabs בעתיד.
-
----
-
-## 7. מפת דרכים לפי שלבים
-
-### שלב 1 — אימות (עכשיו) 🎯
-- [ ] לפרסם בקבוצות חתונה (תבנית למעלה)
-- [ ] לפרסם ריל #1
-- [ ] לדבר עם 5-10 זוגות + 3 אולמות
-- [ ] לעקוב אחרי פניות (יעד: 5-10 בשבועיים)
-
-### שלב 2 — הוכחה (אחרי אות לביקוש)
-- [ ] לבצע 1-3 הזמנות ראשונות עם המלאי הקיים
-- [ ] לאסוף ביקורות + תמונות אמיתיות מאירועים
-- [ ] לקנות לגו לפי הצורך
-- [ ] שותפות ראשונה עם אולם/מפיק
-
-### שלב 3 — צמיחה
-- [ ] להרחיב מלאי ולוקים
-- [ ] מנוע תוכן קבוע (UGC + רילים)
-- [ ] תמחור/חבילות מתקדמות
-- [ ] לשקול Formspree/CRM לניהול לידים
+### Tools we used
+- **Site + content:** Claude (here).
+- **Video editing:** CapCut (we provide the `.srt` files).
+- **Hosting/deploy:** GitHub + GitHub Pages (free).
+- No video/image/voice-generation MCP is connected. For high-quality Hebrew voiceover, consider ElevenLabs later.
 
 ---
 
-## 8. משימות פתוחות (TODO)
-- [ ] לאשר/לעדכן שם אינסטגרם ב-`script.js`
-- [ ] להחליף תמונות מוצר בצילומים אמיתיים של כל קטגוריה כשיהיו
-- [ ] (אופציונלי) באנר "זוגות מייסדים" + Google Analytics
-- [ ] לדייק את תוכן 3 הלוקים לפי המלאי בפועל
+## 7. Phased Roadmap
+
+### Phase 1 — Validate (now) 🎯
+- [ ] Post in wedding groups (template above)
+- [ ] Post Reel #1
+- [ ] Talk to 5–10 couples + 3 venues
+- [ ] Track inquiries (target: 5–10 in two weeks)
+
+### Phase 2 — Prove (after a demand signal)
+- [ ] Fulfill the first 1–3 orders with existing inventory
+- [ ] Collect reviews + real event photos
+- [ ] Buy LEGO as needed
+- [ ] First partnership with a venue/producer
+
+### Phase 3 — Grow
+- [ ] Expand inventory and looks
+- [ ] Steady content engine (UGC + reels)
+- [ ] Advanced pricing/packages
+- [ ] Consider Formspree/CRM for lead management
+
+---
+
+## 8. Open TODOs
+- [ ] Confirm/update the Instagram handle in `script.js`
+- [ ] Replace product photos with real shots of each category when available
+- [ ] (Optional) "Founding couples" banner + Google Analytics
+- [ ] Refine the 3 looks' contents to match actual inventory
