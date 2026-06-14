@@ -3,38 +3,61 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Built to Bloom — אופציה 1A: סטאגר מהוקצע</title>
+<title>Built to Bloom — אופציה 1: אשכול 4 תמונות גדול</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700;800&family=Assistant:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/css/styles.css" />
 <style>
-  /* ===== אופציה 1A — סטאגר מהוקצע (Refined stagger) ===== */
-  .clbl{position:fixed;top:0;inset-inline:0;z-index:50;background:var(--ink,#241f2e);color:#fff;text-align:center;font-family:"Rubik";font-weight:600;padding:7px;font-size:.88rem}
-  .hero{padding-top:88px}
-  .stack{position:relative;min-height:500px}
-  /* colored depth panel behind */
-  .stack .pan{position:absolute;inset:34px -16px 22px 34px;background:linear-gradient(140deg,var(--blue,#1f9fd6),#46b6e8);border-radius:26px;z-index:0}
-  .stack .pan::after{content:"";position:absolute;inset:0;border-radius:26px;background:
-    radial-gradient(circle at 18px 18px,rgba(255,255,255,.55) 4px,transparent 5px) 0 0/30px 30px;opacity:.25}
-  .stack figure{position:absolute;margin:0;border-radius:18px;overflow:hidden;border:6px solid #fff;box-shadow:0 26px 54px -24px rgba(0,0,0,.55);background:#fff}
-  .stack img{width:100%;height:100%;object-fit:cover;display:block}
-  .stack .f-main{inset-inline-end:5%;top:0;width:60%;aspect-ratio:3/4;z-index:2;transform:rotate(-2.5deg)}
-  .stack .f-2{inset-inline-start:0;bottom:4%;width:52%;aspect-ratio:4/3;z-index:3;transform:rotate(3deg)}
-  .stack .f-3{inset-inline-end:1%;bottom:12%;width:33%;aspect-ratio:1/1;z-index:4;transform:rotate(-6deg)}
-  .stack .lbl{position:absolute;z-index:5;background:#fff;border-radius:13px;padding:9px 15px;font-family:"Rubik";font-weight:700;font-size:.86rem;box-shadow:0 14px 28px -12px rgba(0,0,0,.45);display:flex;align-items:center;gap:8px}
+  /* ===== אופציה 1 — אשכול 4 תמונות, גדול, מותאם מובייל ===== */
+  .clbl{position:fixed;top:0;inset-inline:0;z-index:50;background:var(--ink,#241f2e);color:#fff;text-align:center;font-family:"Rubik";font-weight:600;padding:7px;font-size:.86rem}
+  .hero{padding-top:90px}
+  /* give the photo side more room so the images read big */
+  .hero__inner{grid-template-columns:1fr 1.12fr;gap:42px;align-items:center}
+
+  .stack{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  /* colored "brick" depth panel behind the whole cluster */
+  .stack .pan{position:absolute;inset:-16px -20px;background:linear-gradient(140deg,var(--blue,#1f9fd6),#46b6e8);border-radius:30px;z-index:0}
+  .stack .pan::after{content:"";position:absolute;inset:0;border-radius:30px;
+    background:radial-gradient(circle at 16px 16px,rgba(255,255,255,.5) 4px,transparent 5px) 0 0/32px 32px;opacity:.22}
+
+  .stack figure{position:relative;z-index:1;margin:0;border-radius:16px;overflow:hidden;
+    border:6px solid #fff;background:#fff;box-shadow:0 22px 46px -22px rgba(0,0,0,.55);aspect-ratio:1/1}
+  .stack figure img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+  .stack figure:hover{z-index:6}
+  .stack figure:hover img{transform:scale(1.06)}
+  /* gentle scatter + slight overlap for the layered look */
+  .stack .f1{transform:rotate(-3deg) scale(1.04);z-index:2}
+  .stack .f2{transform:rotate(3deg) scale(1.04);z-index:3}
+  .stack .f3{transform:rotate(2.5deg) scale(1.04);z-index:3}
+  .stack .f4{transform:rotate(-3.5deg) scale(1.04);z-index:4}
+
+  .stack figcaption{position:absolute;inset-block-end:9px;inset-inline-start:9px;background:rgba(255,255,255,.95);
+    border-radius:10px;padding:5px 11px;font-family:"Rubik";font-weight:700;font-size:.76rem}
+  /* floating hand-built label */
+  .stack .lbl{position:absolute;z-index:7;top:50%;inset-inline-start:50%;transform:translate(-50%,-50%) rotate(-3deg);
+    background:#fff;border-radius:13px;padding:9px 15px;font-family:"Rubik";font-weight:700;font-size:.84rem;
+    box-shadow:0 16px 30px -12px rgba(0,0,0,.5);display:flex;align-items:center;gap:8px;white-space:nowrap}
   .stack .lbl::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--green,#54bf3a)}
-  .stack .lbl{top:8%;inset-inline-start:2%}
+
+  /* ---------- MOBILE: clean, big 2×2, no overlap ---------- */
   @media(max-width:860px){
-    .stack{min-height:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    .stack .pan,.stack .lbl{display:none}
-    .stack figure{position:static;width:auto!important;transform:none!important;aspect-ratio:1/1}
-    .stack .f-main{grid-column:1/-1;aspect-ratio:16/11}
+    .hero{padding-top:74px}
+    .hero__inner{grid-template-columns:1fr;gap:30px}
+    .hero__media{order:-1}
+    .stack{gap:12px}
+    .stack .pan{inset:-9px -10px;border-radius:22px}
+    .stack figure{transform:none!important;border-width:5px;box-shadow:0 14px 30px -16px rgba(0,0,0,.5)}
+    .stack figure:hover img{transform:none}
+    .stack .lbl{font-size:.78rem;padding:8px 13px}
+  }
+  @media(max-width:380px){
+    .stack .lbl{display:none} /* keep it uncluttered on very small phones */
   }
 </style>
 </head>
 <body>
-<div class="clbl">אופציה 1A · סטאגר מהוקצע — תמונה ראשית על פאנל צבע, שתי תמונות בזוויות נקיות + מסגרות לבנות</div>
+<div class="clbl">אופציה 1 · אשכול 4 תמונות גדול — במובייל הופך ל-2×2 נקי ומסודר</div>
 
 <header class="nav" id="top">
   <div class="container nav__inner">
@@ -60,9 +83,10 @@
     <div class="hero__media">
       <div class="stack">
         <div class="pan" aria-hidden="true"></div>
-        <figure class="f-main"><img src="../assets/landing/boaz-45.jpg" alt="מרכז שולחן פרחי בר מלגו" /></figure>
-        <figure class="f-2"><img src="../assets/landing/boaz-346.jpg" alt="ציפורי אהבה מלגו עם לב" /></figure>
-        <figure class="f-3"><img src="../assets/landing/crystal-vase-table4.jpg" alt="זר בוואזת קריסטל עם מספר שולחן" /></figure>
+        <figure class="f1"><img src="../assets/landing/boaz-346.jpg" alt="ציפורי אהבה מלגו עם לב" /><figcaption>ציפורי אהבה 🕊️</figcaption></figure>
+        <figure class="f2"><img src="../assets/landing/crystal-vase-table4.jpg" alt="זר בוואזת קריסטל עם מספר שולחן" /><figcaption>מרכז שולחן</figcaption></figure>
+        <figure class="f3"><img src="../assets/landing/boaz-383.jpg" alt="זר על הבר עם פסלוני חתן וכלה" /><figcaption>פסלי חתן וכלה</figcaption></figure>
+        <figure class="f4"><img src="../assets/landing/boaz-45.jpg" alt="מרכז שולחן פרחי בר מלגו" /><figcaption>פרחי בר</figcaption></figure>
         <span class="lbl">נבנה ביד · בהתאמה אישית</span>
       </div>
     </div>
