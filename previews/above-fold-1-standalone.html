@@ -258,6 +258,8 @@ img{max-width:100%;display:block}
   .hero{padding-top:90px}
   /* give the photo side a touch more room so the images read big */
   .hero__inner{grid-template-columns:1fr 1.1fr;gap:46px;align-items:center}
+  /* FIX: the global .lead form-box rule bleeds onto the hero paragraph — reset it */
+  .hero .lead{background:none;border:0;padding:0;display:block;max-width:42ch;font-size:1.18rem;line-height:1.6}
 
   /* the cluster sits on a rounded color mat (padding reveals the mat as a border) */
   .stack{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:16px;
@@ -281,8 +283,12 @@ img{max-width:100%;display:block}
   /* ---------- MOBILE: big, clean 2×2 ---------- */
   @media(max-width:860px){
     .hero{padding-top:74px}
-    .hero__inner{grid-template-columns:1fr;gap:34px}
-    .hero__media{order:-1}
+    .hero__inner{grid-template-columns:1fr;gap:26px}
+    /* TEXT FIRST on mobile so visitors see the pitch + CTA before the photos */
+    .hero__media{order:1}
+    .hero__copy{order:0;text-align:center}
+    .hero .lead{margin-inline:auto}
+    .hero__actions,.hero__badges{justify-content:center}
     .stack{gap:11px;padding:12px;border-radius:22px}
     .stack::before{border-radius:22px}
     .stack figure{transform:none!important;border-width:4px}
