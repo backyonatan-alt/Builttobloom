@@ -181,5 +181,51 @@ Every `push` to the `main` branch **auto-deploys** within ~1–2 minutes (GitHub
 ## 8. Open TODOs
 - [ ] Confirm/update the Instagram handle in `script.js`
 - [ ] Replace product photos with real shots of each category when available
-- [ ] (Optional) "Founding couples" banner + Google Analytics
+- [x] Google Analytics — installed (see section 9). "Founding couples" banner still optional.
 - [ ] Refine the 3 looks' contents to match actual inventory
+
+---
+
+## 9. Analytics & Performance — where to look 📊
+Google Analytics 4 (GA4) is live on the whole site (added 2026-06-16).
+
+### Account / install
+- **GA4 property:** Built to Bloom · **Measurement ID: `G-QHGZSVWENE`**
+- Installed via **`CONFIG.gaId`** in `assets/js/script.js` (the tag loads on `index.html`, `gallery.html`, `photos.html`).
+- GA4 **Enhanced measurement** is on (auto page_view, scroll, outbound clicks).
+
+### The funnel we measure
+`page_view` → `cta_click` → `whatsapp_open` → `generate_lead`
+
+### Events & key params
+| Event | Fires when | Params |
+|---|---|---|
+| `page_view` | visitor lands | (auto) |
+| `cta_click` | clicks a CTA button | `location`, `label`, `lead_source` |
+| `whatsapp_open` ⭐ | taps any WhatsApp button | `source`, `lead_source` |
+| `generate_lead` ⭐ | submits the lead form | `method` (whatsapp/formspree), `event_type`, `lead_source` |
+| `instagram_click` | taps Instagram link | `source` |
+| `gallery_open` | opens the full gallery | `lead_source` |
+
+⭐ = marked as **Key events (conversions)** in GA4.
+**Custom dimensions** registered (event-scoped): `lead_source`, `method`, `event_type`.
+
+### Lead source
+Captured automatically: **UTM param → saved in session → referrer → "direct"**, and also **appended to the WhatsApp message** (`מקור: …`) so the source is visible in the chat itself. Share these UTM links so the source is precise:
+```
+Instagram bio:     https://backyonatan-alt.github.io/Builttobloom/?utm_source=instagram&utm_medium=bio
+Facebook page:     https://backyonatan-alt.github.io/Builttobloom/?utm_source=facebook&utm_medium=page
+FB wedding groups: https://backyonatan-alt.github.io/Builttobloom/?utm_source=facebook&utm_medium=group&utm_campaign=wedding_groups
+TikTok bio:        https://backyonatan-alt.github.io/Builttobloom/?utm_source=tiktok&utm_medium=bio
+WhatsApp status:   https://backyonatan-alt.github.io/Builttobloom/?utm_source=whatsapp&utm_medium=status
+```
+
+### Where to look (GA4)
+- **Realtime / quick test:** Reports → Realtime.
+- **One-screen overview:** custom report **"At a glance — Built to Bloom"** in the left nav (visitors · WhatsApp opens · leads · top source). Also visible in the **Google Analytics mobile app**.
+- **Drop-off funnel:** Explore → **"Lead funnel"** (page_view → cta_click → whatsapp_open → generate_lead).
+- **Traffic sources:** Reports → Acquisition → Traffic acquisition (break down by Session source/medium; add the `lead_source` dimension for our UTM labels).
+- **Weekly email:** scheduled PDF to **back.yonatan@gmail.com** (manage/cancel in Admin → Scheduled emails).
+
+### What "good" looks like
+Rising `whatsapp_open` and `generate_lead`, and which `lead_source` drives them → double down on that channel. Remember the north-star: **inquiries, not likes** (section 3).
