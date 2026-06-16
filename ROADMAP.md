@@ -57,15 +57,52 @@ The best starting channel — free, and relevant couples are already there.
 2. Post a strong photo + a question (ready template below).
 3. Track: comments, DMs, saves.
 
-### Ready-to-post template for wedding groups (copy–paste, Hebrew)
+### Ready-to-post versions for wedding groups (copy–paste, Hebrew)
+Three versions so the **same text isn't pasted in every group** (Facebook suppresses
+reach on duplicate text). Each version is paired with a different bright photo.
+Download the photos from the **"⭐ התמונות לפוסטים בקבוצות"** section on the
+[photos page](https://backyonatan-alt.github.io/Builttobloom/photos.html).
+
+**Version 1 — main · photo: `467a3712...` (bride holding the bouquet)**
 ```
-היי 🌷 אנחנו עסק חדש — Built to Bloom — ומשכירים זרים וקישוטי לגו לחתונות ואירועים.
-✨ לא נובלים, בכל צבע שתבחרו, ומקוריים בטירוף — וזול יותר מפרחים אמיתיים.
-יש לנו זר כלה, פרח דש לחתן, פסלי חתן-כלה, סידורי שולחן ועמדות מיוחדות.
-מתלבטים אם זה מתאים לכם? נשמח לשמוע מה דעתכם 👇
-(תמונות מצורפות + קישור בתגובה הראשונה)
+היי 🌷 אנחנו עסק חדש בשם Built to Bloom, ומשכירים זרים וקישוטי לגו לחתונות ואירועים.
+
+רגע, לגו? כן. וזה היופי:
+לא נובל, נשאר מושלם מהבוקר ועד סוף הערב, ונשמר כמזכרת לתמיד.
+עמיד לכל מזג אוויר: שמש, רוח או מזגן, לא משנה.
+זול יותר מפרחים אמיתיים, ולא נזרק בסוף האירוע.
+בכל צבע, בכל גודל, מותאם בדיוק אליכם.
+
+יש לנו זר כלה, פרח דש לחתן, פסלי חתן וכלה, סידורי שולחן ועמדות מיוחדות.
+
+מתלבטים אם זה מתאים לכם? נשמח לשמוע מה דעתכם בתגובות.
 ```
-> Tip: put the website link in the **first comment**, not in the post body (many groups suppress posts with links).
+
+**Version 2 — personal · photo: `crystal-vase-table4.jpg` (table centerpiece)**
+```
+התאהבנו בלגו, בחתונות וברגעים שמחים, ויצרנו מזה עסק 🌷
+ב-Built to Bloom אנחנו משכירים זרים וקישוטי לגו לחתונות ואירועים.
+זר שלא נובל, בכל צבע שתבחרו, מקורי בטירוף, וזול יותר מפרחים אמיתיים.
+יש לנו זר כלה, פרח דש לחתן, פסלי חתן וכלה, סידורי שולחן ועמדות מיוחדות.
+מה דעתכם? מתאים לחתונה שלכם? נשמח לשמוע בתגובות.
+```
+
+**Version 3 — question · photo: `392152...` (red and pink rose bouquet)**
+```
+שאלה לזוגות שמתחתנים: מה דעתכם על זר כלה שלא נובל לעולם? 🌷
+אנחנו Built to Bloom, ומשכירים זרים וקישוטי לגו לחתונות ואירועים.
+נשאר מושלם כל הערב, נשמר כמזכרת לתמיד, ועולה פחות מפרחים אמיתיים.
+יש לנו גם פרח דש לחתן, פסלי חתן וכלה, סידורי שולחן ועמדות מיוחדות.
+מעניין אתכם? ספרו לי בתגובות.
+```
+
+**First comment (for every version) — put the link HERE, not in the post body:**
+```
+פרטים ותמונות נוספות כאן 🌷 https://backyonatan-alt.github.io/Builttobloom/
+או הודעה ישירה בוואטסאפ: 054-7822268
+```
+> Tip: many groups suppress reach on posts that contain links, so the website goes
+> in the first comment, not the post itself.
 
 ### Other ways to validate
 - **Conversations:** talk to 5–10 couples + 3 venues. Ask "Would you rent this? What would you pay?".

@@ -23,6 +23,14 @@
     figure{margin:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--tint)}
     figure img{width:100%;height:200px;object-fit:cover;display:block}
     figcaption{font-family:"Rubik";font-size:.78rem;color:var(--muted);text-align:center;padding:6px}
+    .feat{max-width:1000px;margin:6px auto 0;padding:0 16px}
+    .feat h2{font-family:"Rubik";font-weight:800;font-size:1.15rem;text-align:center;margin-bottom:4px}
+    .feat .note{color:var(--muted);text-align:center;font-size:.9rem;margin-bottom:14px}
+    .feat .grid{padding-top:0;padding-bottom:8px}
+    .feat figure{border:2px solid var(--blue)}
+    .feat figcaption{color:var(--ink);font-weight:600;font-size:.85rem}
+    .divider{border:none;border-top:1px solid var(--line);max-width:1000px;margin:22px auto}
+    .all-title{font-family:"Rubik";font-weight:700;font-size:1rem;color:var(--muted);text-align:center;margin-top:8px}
     footer{text-align:center;color:var(--muted);font-size:.85rem;padding:10px 20px 36px}
     a{color:var(--blue)}
   </style>
@@ -38,6 +46,26 @@
       ואז פותחים את CapCut → מוסיפים מהגלריה.
     </div>
   </header>
+  <section class="feat">
+    <h2>⭐ התמונות לפוסטים בקבוצות</h2>
+    <p class="note">שלוש תמונות בהירות, אחת לכל גרסת פוסט. הורידו ושמרו אותן.</p>
+    <div class="grid">
+      <figure>
+        <img src="assets/landing/467a3712ace7e6a615309860987652fc.jpg" alt="כלה אוחזת זר" loading="lazy">
+        <figcaption>גרסה 1 · כלה עם זר</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/landing/crystal-vase-table4.jpg" alt="סידור בכד קריסטל" loading="lazy">
+        <figcaption>גרסה 2 · סידור שולחן</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/landing/392152d60824e96096d7ba1c9a75a73d.jpg" alt="זר ורדים" loading="lazy">
+        <figcaption>גרסה 3 · זר ורדים</figcaption>
+      </figure>
+    </div>
+  </section>
+  <hr class="divider">
+  <p class="all-title">כל התמונות</p>
   <div class="grid" id="grid"></div>
   <footer>Built to Bloom · <a href="./">חזרה לאתר</a></footer>
   <script>
