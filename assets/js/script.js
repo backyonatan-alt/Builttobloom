@@ -11,6 +11,8 @@ const CONFIG = {
   // OPTIONAL: paste a Formspree form endpoint to collect leads by email.
   // Leave empty ("") to fall back to sending the lead via WhatsApp instead.
   formEndpoint: "", // e.g. "https://formspree.io/f/xxxxxxx"
+  // Google Analytics 4 Measurement ID (leave empty to disable analytics).
+  gaId: "G-QHGZSVWENE",
 };
 /* ------------------------------------------------------------- */
 
@@ -18,14 +20,69 @@ const waText = encodeURIComponent("היי! ראיתי את Built to Bloom ואש
 const waUrl = `https://wa.me/${CONFIG.whatsapp}?text=${waText}`;
 const igUrl = `https://instagram.com/${CONFIG.instagram}`;
 
+/* ---- Analytics (GA4) ---- */
+function track(name, params) {
+  if (typeof window.gtag === "function") window.gtag("event", name, params || {});
+}
+// Figure out where this visitor came from (UTM params → saved → referrer → direct)
+function leadSource() {
+  const p = new URLSearchParams(location.search);
+  const src = p.get("utm_source");
+  if (src) {
+    const med = p.get("utm_medium");
+    const val = med ? `${src}/${med}` : src;
+    try { sessionStorage.setItem("btb_src", val); } catch (e) {}
+    return val;
+  }
+  try { const s = sessionStorage.getItem("btb_src"); if (s) return s; } catch (e) {}
+  if (document.referrer) {
+    try { return new URL(document.referrer).hostname.replace(/^www\./, ""); } catch (e) {}
+  }
+  return "direct";
+}
+const LEAD_SOURCE = leadSource();
+(function initGA() {
+  if (!CONFIG.gaId) return;
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  window.gtag("js", new Date());
+  window.gtag("config", CONFIG.gaId);
+  const s = document.createElement("script");
+  s.async = true;
+  s.src = "https://www.googletagmanager.com/gtag/js?id=" + CONFIG.gaId;
+  document.head.appendChild(s);
+})();
+
 // Wire up all WhatsApp / Instagram links
 ["wa-link", "wa-link-footer", "wa-fab"].forEach((id) => {
   const el = document.getElementById(id);
-  if (el) { el.href = waUrl; el.target = "_blank"; el.rel = "noopener"; }
+  if (el) {
+    el.href = waUrl; el.target = "_blank"; el.rel = "noopener";
+    el.addEventListener("click", () => track("whatsapp_open", { source: id, lead_source: LEAD_SOURCE }));
+  }
 });
 ["ig-link", "ig-inline"].forEach((id) => {
   const el = document.getElementById(id);
-  if (el) { el.href = igUrl; el.target = "_blank"; el.rel = "noopener"; }
+  if (el) {
+    el.href = igUrl; el.target = "_blank"; el.rel = "noopener";
+    el.addEventListener("click", () => track("instagram_click", { source: id, lead_source: LEAD_SOURCE }));
+  }
+});
+
+// Track CTA button clicks (in-page anchor buttons like "קבלו הצעת מחיר")
+document.querySelectorAll('a.btn[href^="#"]').forEach((el) => {
+  el.addEventListener("click", () => {
+    const sec = el.closest("section");
+    track("cta_click", {
+      location: (sec && sec.id) || "nav",
+      label: el.textContent.trim().slice(0, 40),
+      lead_source: LEAD_SOURCE,
+    });
+  });
+});
+// Track clicks through to the full gallery
+document.querySelectorAll('a[href="gallery.html"]').forEach((el) => {
+  el.addEventListener("click", () => track("gallery_open", { lead_source: LEAD_SOURCE }));
 });
 
 // Close the mobile menu after tapping a link
@@ -95,6 +152,7 @@ if (form) {
           body: new FormData(form),
         });
         if (res.ok) {
+          track("generate_lead", { method: "formspree", event_type: data.event_type || "", lead_source: LEAD_SOURCE });
           form.reset();
           setStatus("תודה! נחזור אליכם בהקדם 🌸", "ok");
         } else {
@@ -114,8 +172,10 @@ if (form) {
       data.event_date ? `תאריך: ${data.event_date}` : null,
       data.event_type ? `סוג אירוע: ${data.event_type}` : null,
       data.message ? `הערות: ${data.message}` : null,
+      `מקור: ${LEAD_SOURCE}`,
     ].filter(Boolean);
     const url = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(lines.join("\n"))}`;
+    track("generate_lead", { method: "whatsapp", event_type: data.event_type || "", lead_source: LEAD_SOURCE });
     window.open(url, "_blank", "noopener");
     setStatus("נפתח וואטסאפ עם הפרטים — רק ללחוץ שליחה ✓", "ok");
     form.reset();
