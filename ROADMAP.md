@@ -119,6 +119,53 @@ Download the photos from the **"⭐ התמונות לפוסטים בקבוצות
 
 ---
 
+## 3.1 Launch Log & Tracking 📊
+> Keep this updated. The point is to learn **what works** for next time: which
+> message, which photo, which kind of group. The only metric that matters is
+> **inquiries (DMs + WhatsApp), not likes.**
+
+### Campaign #1 — Facebook wedding groups
+- **Date posted:** 2026-06-16
+- **Reach:** ~20 groups
+- **What went out:** 3 post versions (V1 main, V2 personal, V3 question), each with a
+  different photo, link in the first comment.
+  - V1 (main) → photo `467a3712...` (bride holding the bouquet)
+  - V2 (personal) → photo `crystal-vase-table4.jpg` (table centerpiece)
+  - V3 (question) → photo `392152...` (red and pink rose bouquet)
+- **Angle:** original / fully customizable / cheaper than real flowers.
+  (Dropped the "never wilts / keepsake" angle — irrelevant for a one-night event.)
+- **Review date:** 2026-06-30 (target: 5–10 serious inquiries in two weeks)
+
+### Results — fill this in as they come (per group)
+| Date | Group name | Version (1/2/3) | Likes | Comments | Saves/Shares | DMs | WhatsApp msgs | Inquiries (price/date) | Notes |
+|------|-----------|-----------------|-------|----------|--------------|-----|---------------|------------------------|-------|
+|      |           |                 |       |          |              |     |               |                        |       |
+
+### Weekly rollup
+| Week ending | Total inquiries | Bookings / deposits | Best version | Best photo | Best group type |
+|-------------|-----------------|---------------------|--------------|------------|-----------------|
+| 2026-06-23  |                 |                     |              |            |                 |
+| 2026-06-30  |                 |                     |              |            |                 |
+
+### What to record for each inquiry (so we can analyze later)
+- **Source:** which group + which version (1/2/3).
+- **Channel:** comment / DM / WhatsApp.
+- **Question type:** "pretty!" vs. real intent (asked **price** or **date**).
+- **Date of their event** + **region** (helps target future ads).
+- **Outcome:** ghosted / quote sent / booked / deposit.
+
+### Questions Campaign #1 should answer
+1. Which **version** got the most real inquiries (not just likes)?
+2. Which **photo** stopped the scroll best?
+3. Which **group type** converts (budget brides vs. regional vs. general)?
+4. What's the most common **objection or question** in comments/DMs?
+5. Rough **inquiries-per-group** rate → tells us how many groups to target next time.
+
+➡️ On 2026-06-30, summarize the answers here and decide: scale groups, start a paid
+test, or adjust the message.
+
+---
+
 ## 4. Marketing Ideas (for later stages)
 
 ### A. "Rent This Look" — ✅ already on the site
@@ -199,10 +246,10 @@ Every `push` to the `main` branch **auto-deploys** within ~1–2 minutes (GitHub
 ## 7. Phased Roadmap
 
 ### Phase 1 — Validate (now) 🎯
-- [ ] Post in wedding groups (template above)
+- [x] Post in wedding groups (posted in ~20 groups on 2026-06-16 — see Launch Log §3.1)
 - [ ] Post Reel #1
 - [ ] Talk to 5–10 couples + 3 venues
-- [ ] Track inquiries (target: 5–10 in two weeks)
+- [ ] Track inquiries (target: 5–10 in two weeks → review by 2026-06-30)
 
 ### Phase 2 — Prove (after a demand signal)
 - [ ] Fulfill the first 1–3 orders with existing inventory
