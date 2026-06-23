@@ -7,7 +7,7 @@ const CONFIG = {
   // WhatsApp number in international format, digits only (e.g. Israel: 9725XXXXXXXX)
   whatsapp: "972547822268",
   // Instagram handle (without the @)
-  instagram: "built.to.bloom",
+  instagram: "built.to.bloom.il",
   // OPTIONAL: paste a Formspree form endpoint to collect leads by email.
   // Leave empty ("") to fall back to sending the lead via WhatsApp instead.
   formEndpoint: "", // e.g. "https://formspree.io/f/xxxxxxx"

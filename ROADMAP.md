@@ -91,7 +91,7 @@ Venues, event producers, photographers, event designers — give them a sample +
 
 ### C. Viral station + content engine (UGC)
 A build/greetings station = an attraction guests photograph → free content.
-- Sign: "Tag us @built.to.bloom".
+- Sign: "Tag us @built.to.bloom.il".
 - A small keepsake in exchange for a tag/review.
 - One Reel every 2–3 days.
 
@@ -145,7 +145,7 @@ Every `push` to the `main` branch **auto-deploys** within ~1–2 minutes (GitHub
 
 ### Contact settings (`assets/js/script.js`)
 - WhatsApp: `972547822268` ✅
-- Instagram: `built.to.bloom` (update if different)
+- Instagram: `built.to.bloom.il`
 - `formEndpoint`: empty → the form opens WhatsApp with the details. (Can connect Formspree to collect leads by email.)
 
 ### Tools we used

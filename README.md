@@ -37,7 +37,7 @@ Open `assets/js/script.js` and edit the `CONFIG` block at the top:
 ```js
 const CONFIG = {
   whatsapp: "972500000000",   // your WhatsApp number, international format, digits only
-  instagram: "built.to.bloom", // your Instagram handle, no @
+  instagram: "built.to.bloom.il", // your Instagram handle, no @
   formEndpoint: "",            // optional Formspree URL to collect leads by email
 };
 ```
